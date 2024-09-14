@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #52C1DB;
+    --rose: #E894AD;
+    --yellow: #EDB801;
+    --green: #00d084;
+    --purple: #9b51e0;
+}
+
+
+h3{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+a, p{
+    font-size: 19px;
+    color: currentColor;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    color: #383838;
+}
+
+@media screen and (max-width: 700px){
+    a, p{
+        font-size: 12px;
+    }
+    svg{
+        width: 15px;
+        height: 15px;
+    }
+}
