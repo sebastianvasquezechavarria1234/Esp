@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esp | Agenda tu cita</title>
+    <link rel="icon" href="./img/favicon.png">
+    <!-- STYLOS -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/agenda-tu-cita.css">
+</head>
+<body class="bg-blue-50">
+    <!-- ICON TOP -->
+    <a href="#"
+    class="boton__top fixed z-30 w-[60px] h-[60px] bg-green-100 bottom-[20px] right-[20px] flex justify-center items-center rounded-full shadow-lg
+    max-sm:w-[45px] max-sm:h-[45px]">
+    <svg class="text-green-600 w-[30px] h-[30px] max-sm:w-[18px] max-sm:h-[18px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M16 9l-4 -4" /><path d="M8 9l4 -4" /></svg>
+    </a>
+    <!-- MENU RESPONSIVE -->
+     <section class="menu__responsive fixed left-0 top-0 w-full h-screen bg-blue-50 z-50 overflow-y-scroll">
+        <!-- MENU HEADER -->
+         <div class="flex justify-between items-center p-[20px]">
+            <a href="./index.html">
+                <img class="w-[30px]" src="./img/favicon.png" alt="">
+            </a>
+            <li 
+                id="iconX"
+                class="w-[28px] h-[28px] bg-[var(--green)] flex justify-center items-center rounded-full cursor-pointer">
+                <svg class="w-[15px] h-[15px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </li>
+         </div>
+        <ul class="menu__reponsive--ul p-[20px]">
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Home</a>
+            </li>
+            <!-- MENU -->
+            <li>
+                <a class="text-[18px] py-[10px] flex items-center gap-[5px]" href="">
+                    Servicios
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                    </svg>
+                </a>
+                <ul class="grid grid-cols-3 p-[10px] rounded-[10px] gap-[5px]">
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-1.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/serivicios-2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-3.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-4.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-5.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-6.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- MENU -->
+            <li>
+                <a class="text-[18px] py-[10px] flex items-center gap-[5px]" href="">
+                    Blog
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                    </svg>
+                </a>
+                <ul class="grid grid-cols-3 p-[10px] rounded-[10px] gap-[5px]">
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog1.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog2.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog3.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog4.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog5.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog6.webp" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Acerca de</a>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">0189 71 24 21</a>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Reservar una cita</a>
+            </li>
+        </ul>
+     </section>
+    <!-- HEADER -->
+    <header 
+        id="header" 
+        class="sticky top-[10px] z-40 px-[20px] duration-300 transition-all bg-white rounded-[15px]">
+        <nav class="flex justify-between items-center ">
+            <ul class="flex">
+                <li class="">
+                    <a 
+                        href="./index.html"
+                        class="p-[20px] hover:text-[var(--green)] duration-200 transition-all block">Hogar</a>
+                </li>
+                <!-- LI CTN MENU HOVER OVERLINE -->
+                <li class="header__servicios--li">
+                    <a 
+                        href="./servicios.html"
+                        class="p-[20px] hover:text-[var(--green)] duration-200 transition-all flex items-center">
+                        Servicios
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                        </svg>
+                    </a>
+                        <!-- CTN MENU SERVICIOS -->
+                        <ul class="header__servicios--opacity absolute w-full bg-white left-0 top-[96%] rounded-[15px] grid grid-cols-6 gap-[20px] p-[20px]">
+                            <!-- ITEMS 1 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/servicios-1.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">COMPROMISO DE LOS EMPLEADOS</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 2 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/serivicios-2.png" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">MODIFICACIÓN DEL ESTILO DE VIDA</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 3 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/servicios-3.png" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">COMPOSICIÓN CORPORAL</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 4 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/servicios-4.png" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">CONSULTA Y ASESORAMIENTO</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 5 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/servicios-5.png" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">SERVICIOS DE EMERGENCIA</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 6 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/servicios-6.png" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">PRUEBAS DEL GENOMA</h2>
+                                </a>
+                            </li>
+
+                        </ul>
+                </li>
+                <!-- LI CTN MENU HOVER OVERLINE -->
+                <li class="header__servicios--li">
+                    <a 
+                        href="./blog.html"
+                        class="p-[20px] hover:text-[var(--green)] duration-200 transition-all flex items-center">
+                        Blog
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                        </svg>
+                    </a>
+                        <!-- CTN MENU SERVICIOS -->
+                        <ul class="header__servicios--opacity absolute w-full bg-white left-0 top-[96%] rounded-[15px] grid grid-cols-6 gap-[20px] p-[20px]">
+                            <!-- ITEMS 1 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog1.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Terapia de masaje con oxigeno:beneficios, técnicas y que...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 2 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog2.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">La importancia de la atención medica inmediata en el lugar...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 3 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog3.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Programas de nutrición asequibles en el lugar de traba...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 4 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog4.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Promoción de la salud en el lugar de trabajo estrategias para el...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 5 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog5.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Aumentar la productividad de los empleados:el papel...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 6 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="./blog.html">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog6.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">La importancia de los beneficios integrales de salud para los...</h2>
+                                </a>
+                            </li>
+
+                        </ul>
+                </li>
+                <li class="">
+                    <a 
+                        href="#"
+                        class="p-[20px] hover:text-[var(--green)] duration-200 transition-all block">Acerca de</a>
+                </li>
+            </ul>
+            <ul class="absolute left-[50%] translate-x-[-50%]">
+                <li>
+                    <a 
+                        href="./index.html"
+                        class="">
+                        <img class="w-[50px]" src="./img/logo-panda.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex gap-[10px] items-center max-sm:gap-[5px]">
+                <li>
+                    <a 
+                        href="./agenda-tu-cita.html"
+                        class="py-[10px] px-[25px] bg-[var(--green)] text-white rounded-full">
+                        <span class="italic">01 89 71 24 21</span>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="./agenda-tu-cita.html"
+                        class="py-[10px] px-[25px] bg-[var(--green)] text-white rounded-full">
+                        <span class="italic">Reservar cita</span>
+                    </a>
+                </li>
+                <li 
+                    id="iconMenu"
+                    class="w-[28px] h-[28px] bg-[var(--green)] flex justify-center items-center rounded-full cursor-pointer">
+                    <svg class="w-[15px] h-[15px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- FORM -->
+     <form
+        class="max-w-[650px] mx-auto px-[10px] mt-[120px] text-center" 
+        action="">
+        <h1 
+            class="font__h1 text-[4rem] font-bold leading-[60px] mb-[30px]
+                    max-md:text-[2rem] max-md:leading-[30px] max-sm:mb-[10px]">
+            <span class="hero__tt--span relative">
+                Reserva
+            </span> 
+            tu cita
+        </h1>
+
+        <!-- FLEX -->
+        <div class="flex gap-[10px]">
+            <input
+                class="py-[14px] px-[25px] block mb-[20px] max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[14px] max-sm:mb-[10px]" 
+                type="text"
+                required
+                maxlength="100"
+                minlength="3"
+                placeholder="Ingrese sus nombres">
+            <input
+                class="py-[14px] px-[25px] block mb-[20px] max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[14px] max-sm:mb-[10px]" 
+                type="text"
+                required
+                maxlength="100"
+                minlength="3"
+                placeholder="Ingrese sus Apellidos">
+            </div>
+            <input
+                class="py-[14px] px-[25px] block mb-[20px] max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[14px] max-sm:mb-[10px]" 
+                type="email"
+                required
+                maxlength="100"
+                minlength="3"
+                placeholder="Correo electrónico">
+            <!-- FLEX -->
+            <div class="flex gap-[10px] max-sm:flex-col max-sm:gap-[0px]">
+                <input
+                    class="py-[14px] px-[25px] block mb-[20px] max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[14px] max-sm:mb-[10px]" 
+                    type="number"
+                    required
+                    maxlength="100"
+                    minlength="3"
+                    placeholder="Teléfono">
+                <input
+                    class="py-[14px] px-[25px] block mb-[20px] max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[14px] max-sm:mb-[10px]" 
+                    type="datetime-local"
+                    >
+            </div>
+
+            <!-- SUBMIT -->
+             <div class="flex justify-start">
+                <input 
+                    class="py-[10px] italic text-[19px] border-none px-[25px] bg-[var(--green)] w-[200px] text-white outline-none cursor-pointer max-sm:text-[12px] max-sm:py-[8px] max-sm:px-[13px] max-sm:w-[130px]"
+                    type="submit"
+                    value="Reservar cita!">
+             </div>
+    </form>
+    
+     <!-- FOOTER -->
+     <footer class="bg-blue-100 rounded-[20px_20px_0_0] px-[10px] mt-[160px]">
+        <!-- BG GREEN -->
+        <div class="max-w-[1330px] p-[40px] mx-auto px-[20px] bg-green-50 grid grid-cols-5 rounded-[20px] translate-y-[-100px] max-lg:grid-cols-2 gap-[10px]">
+            <!-- ARTICLE -->
+             <article class="max-lg:col-span-2 max-lg:mb-[30px] block">
+                <img class="w-[70px]" src="./img/favicon.png" alt="">
+             </article>
+            <!-- ARTICLE -->
+             <article>
+                <h3 class="font-bold text-[21px] mb-[10px] max-sm:text-[16px]">Nuestros sitios</h3>
+                <a class="block py-[5px] hover:underline" href="#">Contabilidad</a>
+                <a class="block py-[5px] hover:underline" href="#">App</a>
+                <a class="block py-[5px] hover:underline" href="#">Tarifas</a>
+                <a class="block py-[5px] hover:underline" href="#">Contacto</a>
+             </article>
+            <!-- ARTICLE -->
+             <article>
+                <h3 class="font-bold text-[21px] mb-[10px] max-sm:text-[16px]">Paginas legales</h3>
+                <a class="block py-[5px] hover:underline" href="#">Legal</a>
+                <a class="block py-[5px] hover:underline" href="#">Política de privacidad</a>
+             </article>
+            <!-- ARTICLE -->
+             <article>
+                <h3 class="font-bold text-[21px] mb max-sm:text-[16px]-[10px]">Síguenos</h3>
+                <a class="block py-[5px] hover:underline" href="#">Facebook</a>
+                <a class="block py-[5px] hover:underline" href="#">LinkedIn</a>
+                <a class="block py-[5px] hover:underline" href="#">Instagram</a>
+             </article>
+            <!-- ARTICLE -->
+             <article>
+                <h3 class="font-bold text-[21px] mb-[10px] max-sm:text-[16px]">Ayuda y servicios</h3>
+                <a class="block py-[5px] hover:underline" href="#">01 89 71 23 21</a>
+                <a class="block py-[5px] hover:underline" href="#">Esp@gmail.com</a>
+             </article>
+        </div>
+
+        <p class="text-center translate-y-[-50px]">Hecho por Sebastian Vasquez Echavarria</p>
+
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+    <script src="./js/global.js"></script>
+
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+</body>
+</html>
