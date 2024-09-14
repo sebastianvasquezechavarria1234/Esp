@@ -1,3 +1,17 @@
+/* BOTON TOP */
+
+.boton__top{
+    transform: scale(0);
+    transition: all .3s;
+}
+
+.boton__top.botonTopActive{
+    transform: scale(1);
+
+}
+
+/* HEADER */
+
 header{
     margin: 0 20px;
     width: calc(100% - 40px);
@@ -66,6 +80,61 @@ header{
     transition-delay: 350ms;
 }
 
+header nav ul:nth-child(3) li:nth-child(3){
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+    header nav ul:nth-child(3) li:nth-child(3){
+        display: flex;
+    }
+    header{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    header ul:nth-child(1){
+        display: none;
+    }
+    header ul:nth-child(2){
+        position: relative;
+        transform: translateX(0%);
+        left: 0%;
+        padding: 10px 0px;
+    }
+    header ul:nth-child(2) img{
+        width: 30px;
+    }
+    header nav ul:nth-child(3) li a{
+        padding: 5px 10px;
+    }
+}
+
+/* MENU RESPONSIVE */
+
+.menu__responsive{
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s;
+}
+
+.menu__responsive.menuResponsiveActive{
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+
+.menu__reponsive--ul{
+    transform: translateY(300px);
+    transition: all .3s;
+    transition-delay: .1s;
+    opacity: 0;
+}
+
+.menu__reponsive--ul.menuResponsiveUlActive{
+    transform: translateY(0px);
+    opacity: 1;
+}
 /* HERO */
 
 .hero__tt--span{

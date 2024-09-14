@@ -11,11 +11,127 @@
     <!-- BOOTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-blue-50">
+    <!-- ICON TOP -->
+    <a href="#"
+        class="boton__top fixed z-30 w-[60px] h-[60px] bg-green-100 bottom-[20px] right-[20px] flex justify-center items-center rounded-full shadow-lg
+        max-sm:w-[30px] max-sm:h-[30px]">
+        <svg class="text-green-600 w-[30px] h-[30px] max-sm:w-[15px] max-sm:h-[15px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M16 9l-4 -4" /><path d="M8 9l4 -4" /></svg>
+    </a>
+    <!-- MENU RESPONSIVE -->
+     <section class="menu__responsive fixed left-0 top-0 w-full h-screen bg-blue-50 z-50 overflow-y-scroll">
+        <!-- MENU HEADER -->
+         <div class="flex justify-between items-center p-[20px]">
+            <a href="./index.html">
+                <img class="w-[30px]" src="./img/favicon.png" alt="">
+            </a>
+            <li 
+                id="iconX"
+                class="w-[28px] h-[28px] bg-[var(--green)] flex justify-center items-center rounded-full cursor-pointer">
+                <svg class="w-[15px] h-[15px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </li>
+         </div>
+        <ul class="menu__reponsive--ul p-[20px]">
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Home</a>
+            </li>
+            <!-- MENU -->
+            <li>
+                <a class="text-[18px] py-[10px] flex items-center gap-[5px]" href="">
+                    Servicios
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                    </svg>
+                </a>
+                <ul class="grid grid-cols-3 p-[10px] rounded-[10px] gap-[5px]">
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-1.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/serivicios-2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-3.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-4.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-5.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/servicios-6.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- MENU -->
+            <li>
+                <a class="text-[18px] py-[10px] flex items-center gap-[5px]" href="">
+                    Blog
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                    </svg>
+                </a>
+                <ul class="grid grid-cols-3 p-[10px] rounded-[10px] gap-[5px]">
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog1.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog2.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog3.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog4.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog5.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="rounded-[5px]" src="./img/blog6.webp" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Acerca de</a>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">0189 71 24 21</a>
+            </li>
+            <li>
+                <a class="text-[18px] py-[10px] block border-b-[1px] border-gray-600" href="">Reservar una cita</a>
+            </li>
+        </ul>
+     </section>
     <!-- HEADER -->
     <header 
         id="header" 
-        class="sticky top-[10px] z-50 px-[20px] duration-300 transition-all bg-white rounded-[15px]">
+        class="sticky top-[10px] z-40 px-[20px] duration-300 transition-all bg-white rounded-[15px]">
         <nav class="flex justify-between items-center ">
             <ul class="flex">
                 <li class="">
@@ -33,7 +149,6 @@
                             <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
                         </svg>
                     </a>
-
                         <!-- CTN MENU SERVICIOS -->
                         <ul class="header__servicios--opacity absolute w-full bg-white left-0 top-[96%] rounded-[15px] grid grid-cols-6 gap-[20px] p-[20px]">
                             <!-- ITEMS 1 MENU -->
@@ -103,9 +218,96 @@
                                     href="">
                                     <img 
                                         class="block mb-[10px]"
-                                        src="./img/servicios-1.webp" 
+                                        src="./img/servicios-6.png" 
                                         alt="serviios">
                                     <h2 class="font-bold text-[1rem]">PRUEBAS DEL GENOMA</h2>
+                                </a>
+                            </li>
+
+                        </ul>
+                </li>
+                <!-- LI CTN MENU HOVER OVERLINE -->
+                <li class="header__servicios--li">
+                    <a 
+                        href="#"
+                        class="p-[20px] hover:text-[var(--green)] duration-200 transition-all flex items-center">
+                        Blog
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.996 16.75C12.332 16.75 12.621 16.617 12.879 16.36L18.73 10.36C18.934 10.156 19.043 9.90599 19.043 9.60999C19.043 8.99999 18.559 8.51599 17.957 8.51599C17.66 8.51599 17.379 8.63299 17.16 8.85199L12.004 14.164L6.84003 8.85199C6.62103 8.64099 6.34803 8.51599 6.04303 8.51599C5.44103 8.51599 4.95703 8.99999 4.95703 9.60899C4.95703 9.90599 5.06703 10.156 5.27003 10.367L11.121 16.359C11.395 16.625 11.668 16.75 11.996 16.75Z" fill="currentColor" fill-opacity="1"></path>
+                        </svg>
+                    </a>
+                        <!-- CTN MENU SERVICIOS -->
+                        <ul class="header__servicios--opacity absolute w-full bg-white left-0 top-[96%] rounded-[15px] grid grid-cols-6 gap-[20px] p-[20px]">
+                            <!-- ITEMS 1 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog1.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Terapia de masaje con oxigeno:beneficios, técnicas y que...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 2 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog2.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">La importancia de la atención medica inmediata en el lugar...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 3 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog3.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Programas de nutrición asequibles en el lugar de traba...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 4 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog4.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Promoción de la salud en el lugar de trabajo estrategias para el...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 5 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog5.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">Aumentar la productividad de los empleados:el papel...</h2>
+                                </a>
+                            </li>
+                            <!-- ITEMS 6 MENU -->
+                            <li>
+                                <a 
+                                    class=""
+                                    href="">
+                                    <img 
+                                        class="block mb-[10px]"
+                                        src="./img/blog6.webp" 
+                                        alt="serviios">
+                                    <h2 class="font-bold text-[1rem]">La importancia de los beneficios integrales de salud para los...</h2>
                                 </a>
                             </li>
 
@@ -126,7 +328,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="flex gap-[10px]">
+            <ul class="flex gap-[10px] items-center max-sm:gap-[5px]">
                 <li>
                     <a 
                         href=""
@@ -141,6 +343,11 @@
                         <span class="italic">Reservar cita</span>
                     </a>
                 </li>
+                <li 
+                    id="iconMenu"
+                    class="w-[28px] h-[28px] bg-[var(--green)] flex justify-center items-center rounded-full cursor-pointer">
+                    <svg class="w-[15px] h-[15px]"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                </li>
             </ul>
         </nav>
     </header>
@@ -148,12 +355,7 @@
     <!-- HERO -->
     <section
         class="max-w-[1330px] px-[20px] mt-[120px] mx-auto flex gap-[40px]
-               max-lg:flex-col max-sm:px-[10px]">
-        <!-- BG -->
-        <img
-            class="absolute left-0 top-0 -z-10 w-full opacity-60 h-[90%] max-lg:opacity-0" 
-            src="./img/hero.jpg" 
-            alt="bg hero">
+               max-lg:flex-col max-sm:px-[10px] max-sm:mt-[60px]">
 
          </div>
         <!-- HERO TITLE -->
@@ -228,8 +430,8 @@
     </section>
 
     <!-- NUMBER -->
-    <section class="number mt-[80px] max-w-[1330px] px-[100px] mx-auto flex items-center justify-between gap-[20px] text-center bg-gray-50 p-[30px] rounded-[30px]
-                    max-lg:flex-col max-lg:px-[10px] max-lg:gap-[5px] max-lg:grid max-lg:grid-cols-2 max-sm:mt-[0px]">
+    <section class="number mt-[80px] max-w-[1330px] px-[100px] mx-auto flex items-center justify-between gap-[20px] text-center bg-green-50 p-[30px] rounded-[30px] 
+                    max-lg:flex-col max-lg:px-[10px] max-lg:gap-[5px] max-lg:grid max-lg:grid-cols-2 max-sm:mt-[0px] max-sm:p-[10px] max-sm:bg-transparent">
         <div class="max-lg:bg-white max-lg:shadow-sm max-lg:border-[1px] max-lg:border-gray-100 max-lg:p-[20px] max-lg:rounded-[18px]">
             <h1 class="text-[4rem] font-bold max-md:text-[1.5rem]">+10.000</h1>
             <p>Usuarios</p>
@@ -541,63 +743,63 @@
         <p class="max-w-[500px] mx-auto text-center mb-[30px]">Nuestros centros de atencion están siendo subsidiados por todos nuestro socios</p>
 
         <!-- GRID -->
-         <div class="grid grid-cols-5 gap-[15px] max-md:grid-cols-3 max-sm:gap-[10px]">
+         <div class="grid grid-cols-5 gap-[15px] max-md:grid-cols-2 max-sm:gap-[10px]">
             <!-- ITEMS 1 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio1.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 2 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio2.webp" 
                     alt="socio">
             </article>
             <!-- ITEMS 3 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio3.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 4 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio4.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 5 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio5.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 6 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio6.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 7 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio7.webp" 
                     alt="socio">
             </article>
             <!-- ITEMS 8 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio8.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 9 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio9.png" 
                     alt="socio">
             </article>
             <!-- ITEMS 10 -->
-            <article class="socios__article h-[100px] p-[20px] rounded-[10px] flex justify-center items-center">
+            <article class="socios__article h-[100px] bg-white p-[20px] rounded-[10px] flex justify-center items-center">
                 <img 
                     src="./img/socio10.png" 
                     alt="socio">
@@ -641,8 +843,195 @@
 
     </section>
 
+    <!-- BLOG -->
+    <section class="mt-[120px] max-w-[1330px] mx-auto px-[20px] max-sm:px-[10px] max-sm:mt-[60px]">
+        <!-- TITLE -->
+        <h1 
+            class="font__h1 text-[4rem] font-bold leading-[60px] mb-[40px] text-center max-w-[700px] mx-auto 
+            max-md:mb-[20px] max-md:text-[2rem] max-md:leading-[30px]">
+            Visita
+            <span class="hero__tt--span relative">
+                nuestro
+            </span> 
+            blog
+        </h1>
+
+        <!-- GRID -->
+         <div class="grid grid-cols-3 gap-[30px] max-lg:grid-cols-2 max-lg:gap-[10px]">
+            <!-- ITEMS BLOG 1 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog1.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    Terapia de masaje con oxigeno:beneficios, técnicas y que...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 14
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 8
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+            <!-- ITEMS BLOG 2 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog2.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    La importancia de la atención medica inmediata en el lugar...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 125
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 120
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+            <!-- ITEMS BLOG 3 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog3.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    Programas de nutrición asequibles en el lugar de traba...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 241
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 198
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+            <!-- ITEMS BLOG 4 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog4.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    Promoción de la salud en el lugar de trabajo estrategias para el...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 711
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 613
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+            <!-- ITEMS BLOG 5 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog5.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    Aumentar la productividad de los empleados:el papel...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 556
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 455
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+            <!-- ITEMS BLOG 6 -->
+            <article class="max-sm:mb-[20px]">
+                <picture class="h-[400px] block mb-[20px] max-lg:h-[40vw]">
+                    <img class="w-full h-full object-cover" src="./img/blog6.webp" alt="">
+                </picture>
+                <h2 class="text-[21px] font-bold mb-[20px] max-sm:text-[11px] max-sm:mb-[10px]">
+                    La importancia de los beneficios integrales de salud para los...
+                   </h2>
+
+                <!-- ICONS -->
+                <div class="flex gap-[40px] max-sm:gap-[10px]">
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                        Vitas: 976
+                    </p>
+                    <p class="flex items-center gap-[5px] max-sm:text-[10px]">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg>
+                        Comentarios: 677
+                    </p>
+                </div>
+                <a 
+                    class="bg-[var(--green)] text-white py-[8px] px-[18px] rounded-full inline-block mt-[20px]"
+                    href="">
+                    <span class="italic">
+                        Ver blog
+                    </span>
+                </a>
+            </article>
+         </div>
+
+    </section>
+
     <!-- FOOTER -->
-    <footer class="bg-gray-100 rounded-[20px_20px_0_0] px-[10px] mt-[160px]">
+    <footer class="bg-blue-100 rounded-[20px_20px_0_0] px-[10px] mt-[160px]">
         <!-- BG GREEN -->
         <div class="max-w-[1330px] p-[40px] mx-auto px-[20px] bg-green-50 grid grid-cols-5 rounded-[20px] translate-y-[-100px] max-lg:grid-cols-2 gap-[10px]">
             <!-- ARTICLE -->
