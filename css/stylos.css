@@ -1,6 +1,27 @@
 
 /* ANIMACION DE ANTRADA */
 
+.entrada{
+    animation: entrada 6s;
+    top: -200%;
+    opacity: 0;
+}
+
+@keyframes entrada {
+    0%{
+        top: 0%;
+        opacity: 1;
+    }
+    99%{
+        top: 0%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: -200%;
+    }
+}
+
 .entrada::before{
     position: absolute;
     content: "";
@@ -442,24 +463,23 @@
 .video__1,
 .video__2,
 .video__3{
-    animation: video .5s;
+    animation: video 500ms;
     animation-delay: 4.4s;
     
 }
 
 .video__2{
-    animation: video .6s;
+    animation: video 550ms;
     animation-delay: 4.4s;
 }
 .video__3{
-    animation: video .7s;
+    animation: video 600ms;
     animation-delay: 4.4s;
 }
 
 @keyframes video {
     0%{
         transform: scale(0);
-        opacity: 0;
     }
     
 }
