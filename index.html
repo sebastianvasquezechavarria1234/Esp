@@ -10,6 +10,38 @@
     <link rel="stylesheet" href="./css/stylos.css">
 </head>
 <body class="bg-blue-50">
+
+    <!-- ANIMACION ENTRADA -->
+    <section
+        class="entrada fixed z-50 w-full h-screen flex gap-[20px] items-center justify-center">
+
+        <!-- OPACITY -->
+        <div class="opacity flex flex-col gap-[50px]">
+            <!-- CARGA -->
+            <div 
+                class="carga__number relative w-[300px] h-[300px] flex justify-center items-center rounded-full text-[8rem]">
+            </div>
+    
+            <!-- SLIDER -->
+            <div class="text-center h-[33px] overflow-hidden">
+                <ul class="slider">
+                    <li>
+                        <p class="text-[24px]">Cuídate</p>
+                    </li>
+                    <li>
+                        <p class="text-[24px]">Salud</p>
+                    </li>
+                    <li>
+                        <p class="text-[24px]">Confiansa</p>
+                    </li>
+                    <li>
+                        <p class="text-[24px]">Remedios</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
     <!-- ICON TOP -->
     <a href="#"
         class="boton__top fixed z-30 w-[60px] h-[60px] bg-green-100 bottom-[20px] right-[20px] flex justify-center items-center rounded-full shadow-lg
@@ -313,7 +345,7 @@
                 </li>
                 <li class="">
                     <a 
-                        href="#"
+                        href="./acerca-de.html"
                         class="p-[20px] hover:text-[var(--green)] duration-200 transition-all block">Acerca de</a>
                 </li>
             </ul>
@@ -372,12 +404,12 @@
             <div class="flex gap-[10px] my-[20px]">
                 <a 
                     class="bg-[var(--green)] py-[10px] px-[25px] rounded-full text-white inline-block flex items-center gap-[10px]"
-                    href="">
+                    href="./agenda-tu-cita.html">
                     <span class="italic">Reservar una cita</span>
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
                 </a>
                 <a 
-                    href=""
+                    href="./servicios.html"
                     class="border-[1px] border-[var(--green)] py-[10px] px-[24px] rounded-full flex items-center gap-[10px]">
                     <span class="italic">Ver Servicios</span>
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
@@ -397,7 +429,7 @@
             <div class="absolute left-0 top-[-50px] w-[300px] h-[300px] block 
                         max-lg:w-[40vw] max-lg:h-[40vw] max-lg:left-0 max-lg:top-0">
                 <video
-                    class="w-full h-full object-cover" 
+                    class="video__1 w-full h-full object-cover" 
                     src="./img/index-hero-video2.mp4"
                     autoplay
                     loop
@@ -407,7 +439,7 @@
             <div class="absolute left-[100px] top-[30%] w-[350px] h-[350px] block z-10
                         max-lg:w-[40vw] max-lg:h-[40vw]">
                 <video
-                    class="w-full h-full object-cover" 
+                    class="video__2 w-full h-full object-cover" 
                     src="./img/index-video.mp4"
                     autoplay
                     loop
@@ -417,7 +449,7 @@
             <div class="absolute right-[0px] top-[30px] w-[300px] h-[300px] block
                         max-lg:w-[40vw] max-lg:h-[40vw]">
                 <video
-                    class="w-full h-full object-cover" 
+                    class="video__3 w-full h-full object-cover" 
                     src="./img/index-hero-video3.mp4"
                     autoplay
                     loop
